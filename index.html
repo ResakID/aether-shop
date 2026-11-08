@@ -1,0 +1,214 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER | Премиальные аудио-гаджеты</title>
+    <!-- Подключаем современный шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">AETHER</a>
+            <nav class="main-nav">
+                <a href="#catalog">Продукты</a>
+                <a href="#features">Технологии</a>
+                <a href="#reviews">Отзывы</a>
+            </nav>
+            <!-- Кнопка вызова корзины (добавлен onclick) -->
+            <a href="#" class="cart-btn" onclick="toggleCart(); return false;">Корзина (0)</a>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+        <section class="hero">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="badge">Новинка 2026 года</span>
+                    <h1 class="hero-title">Услышь <br><span class="gradient-text">будущее</span></h1>
+                    
+                    <p class="hero-subtitle">
+                        Беспроводные наушники AETHER Pro с адаптивным шумоподавлением и звуком, который меняет реальность.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#catalog" class="btn btn-primary">Смотреть коллекцию</a>
+                        <a href="#features" class="btn btn-ghost">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="images/headphones.png" alt="AETHER Pro" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ БЕСТСЕЛЛЕРОВ -->
+        <section id="catalog" class="bestsellers container anim-section">
+            <h2 class="section-title">Бестселлеры</h2>
+            
+            <div class="bento-grid">
+                <!-- Большая карточка -->
+                <div class="bento-card main-card">
+                    <div class="card-content">
+                        <span class="product-tag">Хит продаж</span>
+                        <h3>AETHER Pro Max</h3>
+                        <p>Флагманские наушники с идеальным звуком</p>
+                        <div class="price">34 990 ₽</div>
+                        <button class="btn btn-primary add-to-cart" style="padding: 10px 20px; font-size: 14px; border: none; cursor: pointer;">В корзину</button>
+                    </div>
+                    <img src="images/headphones.png" alt="AETHER Pro Max" class="bento-img main-img">
+                </div>
+
+                <!-- Широкая карточка -->
+                <div class="bento-card card-wide">
+                    <div class="card-content">
+                        <h3>AETHER Buds</h3>
+                        <div class="price">12 990 ₽</div>
+                        <button class="btn btn-primary add-to-cart" style="padding: 10px 20px; font-size: 14px; border: none; cursor: pointer;">В корзину</button>
+                    </div>
+                    <img src="images/product2.png" alt="AETHER Buds" class="bento-img">
+                </div>
+
+                <!-- Маленькая карточка 1 -->
+                <div class="bento-card card-small">
+                    <div class="card-content">
+                        <h3>AETHER Speaker</h3>
+                        <div class="price">18 990 ₽</div>
+                        <button class="btn btn-primary add-to-cart" style="padding: 8px 15px; font-size: 13px; border: none; cursor: pointer;">В корзину</button>
+                    </div>
+                    <img src="images/product3.png" alt="AETHER Speaker" class="bento-img">
+                </div>
+
+                <!-- Маленькая карточка 2 -->
+                <div class="bento-card card-small">
+                    <div class="card-content">
+                        <h3>AETHER Studio</h3>
+                        <div class="price">27 990 ₽</div>
+                        <button class="btn btn-primary add-to-cart" style="padding: 8px 15px; font-size: 13px; border: none; cursor: pointer;">В корзину</button>
+                    </div>
+                    <img src="images/product4.png" alt="AETHER Studio" class="bento-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ПРЕИМУЩЕСТВ -->
+        <section id="features" class="features container anim-section">
+            <h2 class="section-title">Почему AETHER?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Адаптивный звук</h3>
+                    <p>Наушники сами подстраивают эквалайзер под ваше окружение, будь то шумный офис или тихий парк.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>48 часов работы</h3>
+                    <p>Забудьте о зарядке. Одного заряда хватит на несколько дней активного использования.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🪶</div>
+                    <h3>Космические материалы</h3>
+                    <p>Корпус из авиационного алюминия и амбушюры из "дышащей" пены обеспечивают комфорт весь день.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Защита от воды</h3>
+                    <p>Стандарт IPX5. Не бойтесь дождя или интенсивной тренировки. Музыка не прервется.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ОТЗЫВОВ -->
+        <section id="reviews" class="reviews container anim-section">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews-grid">
+                
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Звук просто бомбический! Шумоподавление реально спасает в маршрутке. Дизайн минималистичный, сидят идеально. Заказал еще в подарок брату."</p>
+                    <span class="author">— Алексей М.</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Искала наушники для работы в опенспейсе, эти — лучшие. Батарея держится реально 2 дня без подзарядки. И сайт у вас, кстати, очень стильный!"</p>
+                    <span class="author">— Мария К.</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Качество сборки на высоте, алюминий чувствуется. Минус звезда только за то, что кейс не в комплекте, но звук всё перекрывает. Доставили в Ейск за два дня."</p>
+                    <span class="author">— Дмитрий В.</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ (FOOTER) -->
+    <footer class="site-footer anim-section">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h2>AETHER</h2>
+                <p>Звук, который меняет реальность.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <a href="#catalog">Каталог</a>
+                <a href="#features">Технологии</a>
+                <a href="#">Доставка и оплата</a>
+            </div>
+
+            <div class="footer-subscribe">
+                <h4>Будьте в курсе</h4>
+                <p>Подпишитесь на новости и получите скидку 10% на первый заказ.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn btn-primary">ОК</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 AETHER. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- ВЫЕЗЖАЮЩАЯ ПАНЕЛЬ КОРЗИНЫ -->
+    <!-- ========================================== -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-overlay" onclick="toggleCart()"></div>
+        <div class="cart-drawer">
+            <div class="cart-header">
+                <h2>Ваш заказ</h2>
+                <button class="close-cart" onclick="toggleCart()">&times;</button>
+            </div>
+            
+            <div id="cart-items-container" class="cart-items">
+                <!-- Сюда JS будет добавлять товары -->
+                <p class="empty-cart-msg">Корзина пока пуста...</p>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    Итого: <span id="cart-total-price">0</span> ₽
+                </div>
+                <button class="btn btn-primary checkout-btn" onclick="checkout()">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПОДКЛЮЧЕНИЕ СКРИПТА -->
+    <script src="script.js"></script>
+</body>
+</html>
